@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Pilih warna background</p>
+
+    <select name="" id="mySelect" onchange="myFunction()">
+      <option value="red">Merah</option>
+      <option value="blue">Biru</option>
+      <option value="yellow">Kuning</option>
+      <option value="white">Putih</option>
+      <option value="purple">Ungu</option>
+    </select>
+
+    <p>Saat memilih warna, background akan berubah!</p>
+    <script type="text/javascript">
+      function myFunction() {
+        var x = document.getElementById("mySelect").value;
+        var body = (document.body.style.backgroundColor = x);
+        document.getElementById("clicked").innerHTML = body;
+      }
+    </script>
+  </body>
+  <!-- ONLOAD -->
+  <!-- <body onload="tampil()">
+    <h1>Niomic Hallo</h1>
+    <button>Hallo</button>
+    <script src="tugas41.js"></script>
+<!-- </body>-->
+</html>
